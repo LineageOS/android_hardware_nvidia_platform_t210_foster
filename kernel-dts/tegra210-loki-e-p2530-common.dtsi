@@ -261,6 +261,7 @@
 	};
 
 	chosen {
+		nvidia,fastboot_without_usb;
 		nvidia,tegra-shield-sku;
         };
 
