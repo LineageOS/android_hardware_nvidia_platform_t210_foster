@@ -42,6 +42,8 @@
 	backlight {
 		compatible = "pwm-backlight";
 		status = "okay";
+		label = "backlight";
+		power-supply = <&max77620_sd3>;
 		pwms = <&tegra_pwm 0 29334>;
 		disable-on-kernel-charging;
 	};
@@ -56,6 +58,8 @@
 			nvidia,cmu-enable = <1>;
 			nvidia,fb-bpp = <32>; /* bits per pixel */
 			nvidia,fb-flags = <TEGRA_FB_FLIP_ON_PROBE>;
+			nvidia,dc-or-node = "/host1x/dsi";
+			nvidia,dc-connector = <&dsi>;
 		};
 		/* tegradc.1 */
 		dc@54240000 {
@@ -65,6 +69,8 @@
 			nvidia,cmu-enable = <1>;
 			nvidia,fb-bpp = <32>; /* bits per pixel */
 			nvidia,fb-flags = <TEGRA_FB_FLIP_ON_PROBE>;
+			nvidia,dc-or-node = "/host1x/sor1";
+			nvidia,dc-connector = <&sor1>;
 		};
 		dsi {
 			nvidia,dsi-controller-vs = <DSI_VS_1>;
