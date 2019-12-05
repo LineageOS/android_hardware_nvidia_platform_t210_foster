@@ -39,7 +39,6 @@
 #include "foster-platforms/tegra210-loki-e-keys-p2530-0032-e00.dtsi"
 #include "foster-platforms/tegra210-loki-maxim-charger.dtsi"
 #include "foster-platforms/tegra210-loki-e-powermon.dtsi"
-#include <tegra210-soc/tegra210-edp.dtsi>
 #include <tegra210-soc/tegra210-audio.dtsi>
 #include "foster-platforms/tegra210-loki-e-gamepad-reset.dtsi"
 #include "foster-platforms/tegra210-loki-e-c2port.dtsi"
@@ -180,7 +179,6 @@
 		compatible = "nvidia,tegra-audio-t210ref-mobile-es755";
 		nvidia-audio-card,name = "tegra-snd-t210ref-mobile-es755";
 		nvidia,hp-det-gpios = <&gpio TEGRA_GPIO(E, 6) GPIO_ACTIVE_HIGH>;
-		edp-consumer-name = "codec+speaker";
 
 		nvidia-audio-card,widgets =
 			"Speaker",	"Int Spk";
@@ -329,14 +327,6 @@
 		status = "disabled";
 	};
 
-	bcmdhd_wlan {
-		edp-consumer-name = "primary-wifi";
-	};
-
-	bcm4329_wlan2_ {
-		edp-consumer-name = "secondary-wifi";
-	};
-
 	gpio@6000d000 {
 		uart_over_jack {
 			gpio-hog;
@@ -346,16 +336,6 @@
 			dt-override-status-odm-data = <0x80000000 0x80000000>;
 			status = "disabled";
 		};
-	};
-
-	cpu_edp {
-		status = "okay";
-		nvidia,edp_limit = <25000>;
-	};
-
-	gpu_edp {
-		status = "okay";
-		nvidia,edp_limit = <25000>;
 	};
 
 	camera-pcl {
@@ -513,7 +493,6 @@
 
 	usb_nvshield_led {
 		status = "okay";
-		edp-consumer-name = "shieldled";
 		disable-on-kernel-charging;
 	};
 
