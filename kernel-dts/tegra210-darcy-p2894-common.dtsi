@@ -342,6 +342,17 @@
 			usb2-0 {
 				status = "okay";
 				mode = "otg";
+
+				usb-role-switch;
+				connector {
+					compatible = "usb-b-connector",
+						     "gpio-usb-b-connector";
+					label = "micro-USB";
+					type = "micro";
+					vbus-gpio = <&gpio TEGRA_GPIO(Z, 0)
+						     GPIO_ACTIVE_LOW>;
+					id-gpio = <&max77620 0 0>;
+				};
 			};
 			usb2-2 {
 				status = "okay";
