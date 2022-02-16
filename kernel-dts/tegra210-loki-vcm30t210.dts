@@ -611,7 +611,7 @@
 	};
 
 	i2c@7000c400 {
-		ina3221x@40 {
+		ina3221@40 {
 			status = "disabled";
 		};
 	};

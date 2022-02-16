@@ -19,11 +19,11 @@
 
 / {
 	i2c@7000c400 {
-		ina3221x: ina3221x@40 {
+		ina3221: ina3221@40 {
 			channel@1 {
 				reg = <0x1>;
-				ti,rail-name = "VDD_SOC";
-				ti,shunt-resistor-mohm = <5>;
+				label = "VDD_SOC";
+				shunt-resistor-micro-ohms = <5000>;
 			};
 		};
 	};
