@@ -1,7 +1,7 @@
 /*
  * arch/arm64/boot/dts/tegra210-loki-e-p2530-common.dtsi
  *
- * Copyright (c) 2015-2017, NVIDIA CORPORATION.  All rights reserved.
+ * Copyright (c) 2015-2020, NVIDIA CORPORATION.  All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -693,7 +693,7 @@
 		dma-names = "tx";
 	};
 
-	host1x {
+	host1x@50000000 {
 		i2c@546c0000 {
 			avdd_dsi_csi-supply = <&max77620_gpio7>;
 			status = "okay";
