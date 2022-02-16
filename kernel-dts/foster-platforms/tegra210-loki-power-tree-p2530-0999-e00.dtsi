@@ -147,7 +147,7 @@
 		};
 
 		vdd_disp_3v0: regulator@12 {
-			compatible = "regulator-fixed-sync";
+			compatible = "regulator-fixed-sync", "regulator-fixed";
 			reg = <12>;
 			regulator-name = "vdd-disp-3v0";
 			regulator-min-microvolt = <3000000>;
@@ -159,7 +159,7 @@
 		};
 
 		vdd_fan: regulator@13 {
-			compatible = "regulator-fixed-sync";
+			compatible = "regulator-fixed-sync", "regulator-fixed";
 			reg = <13>;
 			regulator-name = "vdd-fan";
 			regulator-min-microvolt = <5000000>;
@@ -171,7 +171,7 @@
 		};
 
 		vdd_disp_3v3: regulator@14 {
-			compatible = "regulator-fixed-sync";
+			compatible = "regulator-fixed-sync", "regulator-fixed";
 			reg = <14>;
 			regulator-name = "vdd-disp-3v3";
 			regulator-min-microvolt = <3300000>;
