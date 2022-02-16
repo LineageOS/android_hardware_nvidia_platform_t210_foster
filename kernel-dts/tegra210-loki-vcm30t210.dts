@@ -383,13 +383,6 @@
 		};
 	};
 
-	/* enable I2S4_CYA bit to select i2s4b pin */
-	ahub {
-		i2s@702d1300 {
-			enable-cya;
-		};
-	};
-
 	sound_ref {
 		compatible = "nvidia,tegra-audio-t210ref";
 		nvidia,model = "tegra-snd-t210ref";
@@ -511,7 +504,6 @@
 			bitclock-noninversion;
 			frame-inversion;
 			bit-format = "s32_le";
-			bclk_ratio = <1>;
 			srate = <48000>;
 			num-channel = <8>;
 			name-prefix = "z";
@@ -530,7 +522,6 @@
 			bitclock-noninversion;
 			frame-inversion;
 			bit-format = "s32_le";
-			bclk_ratio = <1>;
 			srate = <48000>;
 			num-channel = <8>;
 			name-prefix = "x";
@@ -549,7 +540,6 @@
 			bitclock-noninversion;
 			frame-inversion;
 			bit-format = "s32_le";
-			bclk_ratio = <1>;
 			srate = <48000>;
 			num-channel = <8>;
 			name-prefix = "y";
