@@ -749,10 +749,18 @@
 	};
 
 	efuse@7000f800 {
+#if LINUX_VERSION < 419
 		efuse-burn {
 			nvidia,redundant-aid-war;
 		};
+#endif
 	};
+
+#if LINUX_VERSION >= 419
+	efuse-burn {
+		nvidia,redundant-aid-war;
+	};
+#endif
 
 	nvs_dsm {
 		compatible = "nvidia,nvs_dsm";
