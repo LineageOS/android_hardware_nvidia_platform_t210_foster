@@ -16,6 +16,23 @@
       "message": "Verified on darcy, sounds works on boot and after waking from screen off sleep.",
       "revId": "fb5b3f2ebd195ceaef7ff255025881dd228d1207",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "879ae6fb_ac2083a6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2022-04-26T05:24:55Z",
+      "side": 1,
+      "message": "Verified on foster_e_hdd, sounds works on boot and after waking from screen off sleep.",
+      "revId": "fb5b3f2ebd195ceaef7ff255025881dd228d1207",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
