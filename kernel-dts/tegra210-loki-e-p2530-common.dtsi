@@ -196,6 +196,13 @@
 		nvidia-audio-card,name = "NVIDIA SHIELD Portable APE";
 		nvidia,hp-det-gpios = <&gpio TEGRA_GPIO(E, 6) GPIO_ACTIVE_HIGH>;
 
+		clocks = <&tegra_car TEGRA210_CLK_PLL_A>,
+			 <&tegra_car TEGRA210_CLK_PLL_A_OUT0>,
+			 <&tegra_car TEGRA210_CLK_EXTERN1>;
+		clock-names = "pll_a", "pll_a_out0", "extern1";
+		assigned-clocks = <&tegra_car TEGRA210_CLK_EXTERN1>;
+		assigned-clock-parents = <&tegra_car TEGRA210_CLK_PLL_A_OUT0>;
+
 		nvidia-audio-card,widgets =
 			"Speaker",	"Int Spk";
 
