@@ -262,10 +262,6 @@
 		};
 	};
 
-	usb_cd@7009f000 {
-		nvidia,dcp-current-limit-ma = <2000>;
-	};
-
 	psy_extcon {
 		status = "okay";
 	};
@@ -307,12 +303,21 @@
 
 	 xudc@700d0000 {
 				nvidia,common_padctl = <&xusb_pad_ctl>;
+		charger-detector = <&tegra_usb_cd>;
 		extcon-cables = <&extcon_cable_xlate 0>;
 		extcon-cable-names = "vbus";
 				#extcon-cells = <1>;
 				status = "disabled";
 		dt-override-status-odm-data = <0x01000000 0x01000000>;
 		};
+
+	tegra_usb_cd: usb_cd {
+		reg = <0x0 0x7009f000 0x0 0x1000>;
+		phys = <&{/xusb_padctl@7009f000/pads/usb2/lanes/usb2-0}>;
+		phy-names = "otg-phy";
+		status = "okay";
+		nvidia,dcp-current-limit-ma = <2000>;
+	};
 
 	xotg {
 		extcon-cables = <&extcon_cable_xlate 1>;
