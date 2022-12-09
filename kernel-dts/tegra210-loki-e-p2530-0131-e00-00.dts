@@ -28,7 +28,7 @@
 	nvidia,dtsfilename = __FILE__;
 
 	chosen {
-		bootargs = "earlycon=uart8250,mmio32,0x70006000";
+		bootargs = "earlycon=uart8250,mmio32,0x70006000 root=/dev/mmcblk0p19 skip_initramfs roottype=ext4 init=/init nvdec_enabled=0";
 		stdout-path = &uarta;
 	};
 
