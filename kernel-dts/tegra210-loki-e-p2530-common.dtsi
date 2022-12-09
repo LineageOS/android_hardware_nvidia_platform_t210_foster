@@ -192,8 +192,8 @@
 	};
 
 	sound {
-		compatible = "nvidia,tegra-audio-t210ref-mobile-es755";
-		nvidia-audio-card,name = "tegra-snd-t210ref-mobile-es755";
+		compatible = "nvidia,tegra210-ape";
+		nvidia-audio-card,name = "NVIDIA SHIELD Portable APE";
 		nvidia,hp-det-gpios = <&gpio TEGRA_GPIO(E, 6) GPIO_ACTIVE_HIGH>;
 
 		nvidia-audio-card,widgets =
