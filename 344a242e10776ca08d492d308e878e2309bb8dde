@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1510bbfd_a16774c2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2022-12-11T20:03:37Z",
+      "side": 1,
+      "message": "This isn\u0027t quite right. bq24190 doesn\u0027t report id, which is expected. But extcon also prints errors saying vbus isn\u0027t there either, which is reported.",
+      "revId": "344a242e10776ca08d492d308e878e2309bb8dde",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
