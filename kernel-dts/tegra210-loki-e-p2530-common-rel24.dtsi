@@ -19,4 +19,8 @@
 	bpmp {
 		status = "okay";
 	};
+
+	pmc@7000e400 {
+		/delete-property/ nvidia,secure-pmc;
+	};
 };
