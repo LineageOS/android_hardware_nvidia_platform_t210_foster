@@ -15,4 +15,8 @@
 	psci {
 		compatible = "arm,psci-0.2";
 	};
+
+	bpmp {
+		status = "okay";
+	};
 };
