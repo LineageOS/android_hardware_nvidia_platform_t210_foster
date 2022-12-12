@@ -34,6 +34,12 @@ dtb-$(CONFIG_ARCH_TEGRA_210_SOC) += tegra210-loki-e-e2581-0031-a01-00.dtb
 dtb-$(CONFIG_ARCH_TEGRA_210_SOC) += tegra210-loki-e-e2581-0131-a00-00.dtb
 dtb-$(CONFIG_ARCH_TEGRA_210_SOC) += tegra210-loki-e-e2581-0131-a01-00.dtb
 dtb-$(CONFIG_ARCH_TEGRA_210_SOC) += tegra210-loki-vcm30t210.dtb
+dtb-$(CONFIG_ARCH_TEGRA_210_SOC) += tegra210-loki-e-p2530-0031-e01-00-rel24.dtb
+dtb-$(CONFIG_ARCH_TEGRA_210_SOC) += tegra210-loki-e-p2530-0031-e02-00-rel24.dtb
+dtb-$(CONFIG_ARCH_TEGRA_210_SOC) += tegra210-loki-e-p2530-0031-e03-00-rel24.dtb
+dtb-$(CONFIG_ARCH_TEGRA_210_SOC) += tegra210-loki-e-p2530-0030-e01-00-rel24.dtb
+dtb-$(CONFIG_ARCH_TEGRA_210_SOC) += tegra210-loki-e-p2530-0030-e02-00-rel24.dtb
+dtb-$(CONFIG_ARCH_TEGRA_210_SOC) += tegra210-loki-e-p2530-0030-e03-00-rel24.dtb
 
 ifneq ($(dtb-y),)
 dtb-y := $(addprefix $(makefile-path)/,$(dtb-y))
