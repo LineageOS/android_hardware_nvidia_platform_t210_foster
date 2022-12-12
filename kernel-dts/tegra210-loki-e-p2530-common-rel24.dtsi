@@ -1,0 +1,18 @@
+
+/ {
+	cpus {
+		idle-states {
+			c7 {
+				arm,psci-suspend-param = <0x00010007>;
+			};
+
+			cc6 {
+				arm,psci-suspend-param = <0x01010010>;
+			};
+		};
+	};
+
+	psci {
+		compatible = "arm,psci-0.2";
+	};
+};
