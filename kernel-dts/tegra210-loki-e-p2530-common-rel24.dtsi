@@ -1,7 +1,7 @@
 
 / {
 	chosen {
-		bootargs = "earlycon=uart8250,mmio32,0x70006000 root=/dev/mmcblk0p19 skip_initramfs roottype=ext4 init=/init";
+		bootargs = "earlycon=uart8250,mmio32,0x70006000 root=/dev/mmcblk0p19 skip_initramfs roottype=ext4 init=/init nvdec_enabled=0";
 	};
 
 	cpus {
