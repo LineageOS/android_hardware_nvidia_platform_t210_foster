@@ -39,12 +39,6 @@
 		android {
 			compatible = "android,firmware";
 			hardware = "foster_e_hdd";
-			system_root_blkdev = "/dev/sda22";
-			fstab {
-				vendor {
-					dev = "/dev/block/platform/tegra-sata.0/by-name/vendor";
-				};
-			};
 		};
 	};
 
