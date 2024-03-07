@@ -36,7 +36,7 @@
 		shared_data = <&thermal_fan_est_shared_data>;
 		trip_length = <10>;
 		profiles {
-			default = "quiet";
+			default = "cool";
 			quiet {
 				active_trip_temps = <0 63000 65000 79000 135000
 						140000 150000 160000 170000 180000>;
